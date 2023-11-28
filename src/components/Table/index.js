@@ -12,7 +12,7 @@ const Table = ()=>{
 
         const getData = async ()=>{
             try {
-                const usersResponse = await axios.get(`http://localhost:3000/v1/users?searchText=${searchText}`) 
+                const usersResponse = await axios.get(`https://hexadecimal.onrender.com/v1/users?searchText=${searchText}`) 
                 setUsersData(usersResponse.data)
             } catch (error) {
                 console.log('Error fetching data: ', error)
